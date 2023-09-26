@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Smythe';
+}
+
+h3 {
+    font-weight: 400;
+}
+
+#container {
+    width: 600px;
+}
+header {
+    height: 130px;
+    background-image: url(https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    
+}
+
+header > h2, header > p{
+    margin: 0;
+}
+
+.items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.item-container {
+    display: flex;
+    width: 508px;
+    border-bottom: 2px solid gray;
+    margin-block: 45px 0;
+}
+
+.item-container > p {
+    font-size: 78.72px;
+    vertical-align: text-top;
+    margin-bottom: 20px;
+    position: relative;
+    top: -19px;
+
+    
+}
+
+.details-container > h3, p {
+    margin-block: 0;
+}
+
+.details-container > h3 {
+    font-size: 28px;
+}
+
+.ingredients{
+    color: #8B8B8B;
+}
+
+p:last-child {
+    font-size: 20px;
+}
+
+.add-to-cart-container {
+    margin-left: auto;
+}
+
+.fa-circle-xmark {
+    font-size: 30px;
+    transform: rotateY(0deg) rotate(45deg);
+}
+
+.checkout-container {
+    width: 508px;
+}
+
+.checkout-container > h3{
+    text-align: center;
+}
+
+.order-container {
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 100%;
+}
+
+.quantity {
+    margin-right: 10px;
+}
+
+.order-container > h3 , .total-container > h3{
+    margin: 0;
+}
+
+.order-container > button {
+    all: unset;
+    margin-left: 13px;
+    color: #BBBBBB;
+}
+
+.price {
+    margin-left: auto;
+}
+
+.total-container {
+    margin-top: 30px;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #16DB99;
+    border-radius: 3px;
+    padding-block: 18px;
+    border: none;
+    color: white;
+}
+
+.modal-container{
+    display: none;
+    width: 524px;
+    border: 2px solid black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: white;
+    text-align: center;
+    height: 400px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-container > h3 {
+    margin-top: 50px;
+}
+.input-container > input {
+    width: 85%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    -moz-appearance: textfield;
+    border: 2px solid gray;
+    color: gray;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.onpayment {
+    padding-block: 40px;
+    background-color: #ECFDF5;
+    color: #AAFF44;
+    width: 508px;
+    text-align: center;
+}
+
+
+
+

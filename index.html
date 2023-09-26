@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <title>Restaurant Ordering App</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2>Jimmy's Dinner</h2>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <div class="items-container">
+        </div>
+        <form class="modal-container" id="modal">
+            <h3>Enter card details</h3>
+            <div class="input-container">
+            <input type="text" placeholder="Enter your name" id="name" required>
+            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Enter card number">
+            <input class="required" id="field" type="number" max="999" pattern="([0-9]|[0-9]|[0-9])" name="cvv" placeholder="Enter CVV"/>
+            </div>
+            <button id="pay" type="submit">Pay</button>
+        </form>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
